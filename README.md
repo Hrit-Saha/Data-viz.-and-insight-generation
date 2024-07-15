@@ -2,6 +2,17 @@
 
 This project includes data wrangling using numpy and pandas, data visualization using seaborn and plotly, ML model and ANN model implementation for identification of patterns and for predictions. All of this has been manifested into a Streamlit app.
 
+# Python Libraries required
+1. Numpy 1.26.4
+2. Pandas
+3. Matplotlib
+4. Seaborn
+5. Plotly
+6. Scikit-learn
+7. Tensorflow
+8. Streamlit
+9. Streamlit-extras
+
 # Intructions on running the Streamlit app
 
 ### ⚠️ Important intruction:
