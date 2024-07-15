@@ -27,6 +27,10 @@ It includes all the the global variables that the Streamlit app will require dur
 
 This directory includes the CSS code for customization of the Streamlit app design.
 
+## `document files`
+
+This directory includes all the `.md` documentation of some of the pages of the Streamlit app.
+
 ## `data_analysis`
 
 This directory includes all the python modules and scripts required for the data analysis of the given datasets in this project.
