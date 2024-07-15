@@ -8,6 +8,13 @@ Download / Import / Fork this repository to your personal system and open the ma
 You will find your Streamlit app running in the default browser.
 If not then simply click on the given `Local URL`, in this case `http://localhost:8501`.
 
+### ⚠️ Important intruction:
+
+https://drive.google.com/file/d/1X1KzP-Ve3I1bbEmELnaNaz11JWX1NJjB/view?usp=sharing
+Click on this given link and download the Credit_Card.csv file before running the Streamlit app. Since this file has huge size it couldn't be uploaded to GitHub.
+this file must be added to this folder `data_analysis\\Credit_Card\\`
+
+
 
 # The files content of this repository
 
