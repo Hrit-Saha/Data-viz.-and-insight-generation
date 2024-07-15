@@ -13,3 +13,22 @@ This is the python script for implementation of various pages which are to shown
 ## `global_streamlit.py`
 
 It includes all the the global variables that the Streamlit app will require during its execution and other background processes.
+
+## `custom_css`
+
+This directory includes the CSS code for customization of the Streamlit app design.
+
+## `data_analysis`
+
+This directory includes all the python modules and scripts required for the data analysis of the given datasets in this project.
+The given datasets include:
+1. bank.csv
+2. calories_daata.csv
+3. credit_card.csv
+4. iris.csv
+5. parkinsons.csv
+6. titanic.csv
+7. mushroom.csv
+8. social_network_ads.csv
+9. medical_insurance.csv
+All of these datasets have been collected from kaggle. For more information please go through the project report.
