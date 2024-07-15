@@ -3,16 +3,17 @@
 This project includes data wrangling using numpy and pandas, data visualization using seaborn and plotly, ML model and ANN model implementation for identification of patterns and for predictions. All of this has been manifested into a Streamlit app.
 
 # Intructions on running the Streamlit app
+
+### ⚠️ Important intruction:
+
+> https://drive.google.com/file/d/1X1KzP-Ve3I1bbEmELnaNaz11JWX1NJjB/view?usp=sharing Click on this given link and download the Credit_Card.csv file before running the Streamlit app. Since this file has huge size it couldn't be uploaded to GitHub.
+This file must be added to this folder `data_analysis\\Credit_Card\\`. Even though the file name is `Credit_Card.csv` but still ensure that it is indeed so before running the Streamlit app.
+
 Download / Import / Fork this repository to your personal system and open the main folder in the integrated terminal and execute the command `Streamlit run app.py`.
 ![image](https://github.com/user-attachments/assets/8c8df221-7d35-431a-b005-2d2acf5b1b4c)
 You will find your Streamlit app running in the default browser.
 If not then simply click on the given `Local URL`, in this case `http://localhost:8501`.
 
-### ⚠️ Important intruction:
-
-https://drive.google.com/file/d/1X1KzP-Ve3I1bbEmELnaNaz11JWX1NJjB/view?usp=sharing
-Click on this given link and download the Credit_Card.csv file before running the Streamlit app. Since this file has huge size it couldn't be uploaded to GitHub.
-This file must be added to this folder `data_analysis\\Credit_Card\\`. Even though the file name is `Credit_Card.csv` but still ensure that it is indeed so before running the Streamlit app.
 
 
 
