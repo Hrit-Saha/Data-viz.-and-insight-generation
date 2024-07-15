@@ -67,3 +67,6 @@ The given datasets include:
 8. social_network_ads.csv
 9. medical_insurance.csv
 All of these datasets have been collected from kaggle. For more information please go through the project report.
+
+# Main app screenshots
+![image](https://github.com/user-attachments/assets/b342b3d2-5a53-4164-8ac5-f0a91479529a)
