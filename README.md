@@ -27,6 +27,7 @@ Download / Import / Fork this repository to your personal system and open the ma
 You will find your Streamlit app running in the default browser.
 If not then simply click on the given `Local URL`, in this case `http://localhost:8501`.
 
+If you still facing problems then you can simply download the `PROJECT - Data Visualization & Insight Generation.zip` file and follow the above given instructions.
 
 
 
