@@ -12,7 +12,7 @@ If not then simply click on the given `Local URL`, in this case `http://localhos
 
 https://drive.google.com/file/d/1X1KzP-Ve3I1bbEmELnaNaz11JWX1NJjB/view?usp=sharing
 Click on this given link and download the Credit_Card.csv file before running the Streamlit app. Since this file has huge size it couldn't be uploaded to GitHub.
-this file must be added to this folder `data_analysis\\Credit_Card\\`
+This file must be added to this folder `data_analysis\\Credit_Card\\`. Even though the file name is `Credit_Card.csv` but still ensure that it is indeed so before running the Streamlit app.
 
 
 
