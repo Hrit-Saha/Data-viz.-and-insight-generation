@@ -63,7 +63,7 @@ class project_overview_page:
         '''Displays the 'Project Overview' Page.
         The core details of the Project has been presented in this page with abstraction.'''
         try:
-            with open("document_files\\project_overview.md", 'r') as f:
+            with open("document_files\\project_overview.md", 'r', encoding="utf-8") as f:
                 markdown_text = f.read()
             st.write(markdown_text)
         except FileNotFoundError:
@@ -85,7 +85,7 @@ class dataset_overview_page:
     def main_page() -> None:
         '''Displays the details of all the datsets which are used in this Project.'''
         try:
-            with open("document_files\\overview_of_datasets.md", 'r') as f:
+            with open("document_files\\overview_of_datasets.md", 'r', encoding="utf-8") as f:
                 markdown_text = f.read()
             st.write(markdown_text)
         except FileNotFoundError:
