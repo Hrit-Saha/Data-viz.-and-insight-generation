@@ -1,0 +1,321 @@
+/* 
+For integrity the dark theme CSS styles are preloaded first.
+For consistency and ease of understanding the code, best efforts have been made to ensure that the 
+light_theme.css and dark_theme.css documents remain identical in terms of code with proper documentation.
+*/
+
+/*
+This Custom CSS file applies custom style to the streamlit app.
+It is to be noted that maintenance of this file is required everytime Streamlit performs a version update,
+since the class names, container type and other attributes of the html elements may change every update.
+
+The use of particular element attribute is encouraged and that is the 'data-testid', if the element has one.
+Other attributes can still be used but they change very often with Streamlit API updates.
+Also, for this reason the use of 'class' attribute for an element is discouraged.
+*/
+
+/* Color palette: #000814, #0a1128, #001f54, #034078, #1282a2, #fefcfb */
+
+/* stDecoration: The standard decoration line on top of the header */
+#stDecoration {
+    visibility: hidden;
+}
+
+/* Head deploy button and main menu button */
+    button[data-testid="baseButton-header"][kind="header"] {
+        visibility: hidden;
+    }
+
+    #MainMenu {
+        visibility: hidden;
+    }
+
+/* All elements and containers */
+*, button, p, ul, div, section, h1, h2, h3, h4, h5, h6, span {
+    color: #001f54;
+    transition: color 1s;
+}
+
+/* All st.divider() objects */
+hr {
+    background-color: #001f5480;
+    transition: background-color 1s;
+}
+
+/* All markdown code */
+    /* \Short code container */
+    code {
+        background-color: #001f5430;
+        color: #000814 !important;
+        border-radius: 0.5rem;
+        font-weight: 900;
+        transition: background-color 1s;
+    }
+    
+    /* Multiline code */
+        /* Multiline code main container */
+        div[data-testid="stCodeBlock"] > pre {
+            background-color: #001f5410;
+            transition: background-color 1s;
+        }
+
+        /* The span elements inside a multiline code */
+        code span {
+            background-color: transparent;
+            color: #000814;
+        }
+
+/* All st.expander objects */
+div[data-testid="stExpander"] > details {
+    border: 1px solid #034078;
+    transition: 1s;
+}
+
+/* All text inputs */
+    div[data-testid="textInputRootElement"] {
+        background-color: #03407850;
+        border: none;
+    }
+
+    div[data-testid="textInputRootElement"] * {
+        color: #001f54c0;
+        background-color: transparent;
+    }
+
+/* All st.selectbox objects */
+    /* The selectbox selection container */
+    div[data-baseweb="select"] div {
+        background-color: #03407820;
+        color: #001f5480;
+        border: none;
+    } 
+
+    /* All the div elements inside the selection container */
+    div[data-baseweb="select"] div div {
+        background-color: transparent;
+    }
+
+    /* The dropdown selection list */
+        div[data-baseweb="popover"], div[data-baseweb="popover"] > div {
+            background-color: transparent;
+        }
+
+        ul[data-testid="stVirtualDropdown"] {
+            background-color: #001f5410;
+            backdrop-filter: blur(10px);
+        }
+
+        ul[data-testid="stVirtualDropdown"] * {
+            background-color: transparent;
+        }
+
+        ul[data-testid="stVirtualDropdown"] li:hover {
+            background-color: #001f5430;
+        }
+
+/* All st.dataframe objects */
+    /* Container of st.dataframe object */
+    div[data-testid="stFullScreenFrame"] {
+        background-color: #fefcfb;
+        transition: background-color 1s;
+    }
+
+    /* The side pop-up toolbar */
+    div[data-testid="stElementToolbar"] div {
+        background-color: transparent;
+        transition: background-color 1s;
+    }
+
+    /* The main dataframe container */
+    div[data-testid="stDataFrame"] 
+    div[data-testid="stDataFrameResizable"] 
+    div.dvn-scroller.glideDataEditor {
+        background-color: transparent !important;
+        transition: background-color 1s;
+    }
+
+    /* The element which appears when we scroll the dataframe */
+    #shadow-y, #shadow-x {
+        background-color: transparent !important;
+    }
+
+/* Universal Container */
+div[data-testid="stApp"] {
+    background-color: #fefcfb;
+    transition: 1s;
+}
+
+/* Header */
+header[data-testid="stHeader"] {
+    background-color: #03407850;
+    height: 70px;
+    backdrop-filter: blur(10px);
+    transition: 1s;
+}
+
+/* Sidebar */
+    /* Main Sidebar Container */
+    section[data-testid="stSidebar"] {
+        text-align: center;
+        background-color: #001f5450;
+        backdrop-filter: blur(10px);
+        transition: 0.5s;
+    }
+
+    /* All sidebar buttons */
+        section[data-testid="stSidebar"] button {
+            border: 2px solid #001f54;
+            background-color: #fefcfb50 ;
+            width: 70%;
+            transition: 0.5s;
+        }
+
+        section[data-testid="stSidebar"] button:hover {
+            transform: scale(1.1);
+            border: 2px solid #001f54;
+            border-radius: 200px/200px;
+            box-shadow: 0px 0px 10px 2px #001f54;
+        }
+
+        section[data-testid="stSidebar"] button:focus {
+            transform: scale(1);
+            border: 2px solid #001f54 !important;
+            border-radius: 200px/200px;
+            box-shadow: 0px 0px 10px 0px #001f54;
+        }
+        
+        section[data-testid="stSidebar"] button:active {
+            transform: scale(1);
+            background-color: #001f5420;
+            border: 2px solid #001f54;
+            box-shadow: 0px 0px 10px 0px #001f54;
+        }
+
+    /* Except the sidebar collapse button */
+    div[data-testid="stSidebarCollapseButton"] button,
+    div[data-testid="stSidebarCollapseButton"] button:hover {
+        border: none;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    /* Only the first h1 header or an markdown("# "), which is the main title */
+    section[data-testid="stSidebar"] h1:first-of-type {
+        background-color: #001f5420;
+        border-radius: 20px;
+    }
+
+    /* headers or st.title() objects 
+    Except the h1 or an markdown("# ") which must be aligned center */
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        text-align: left;
+    }
+
+/* Main Content */
+    /* Main Content Container */ 
+    div[data-testid="stAppViewBlockContainer"] {
+        width: 100%;
+        max-width: 1200px;
+        padding: 100px 60px;
+    }
+
+    /* Side column */
+        /* Side column main container */
+        div[data-testid="stAppViewBlockContainer"] >
+        div[data-testid="stVerticalBlockBorderWrapper"] >
+        div > div[data-testid="stVerticalBlock"] > 
+        div[data-testid="stHorizontalBlock"] > 
+        div[data-testid="column"]:first-child {
+            height: fit-content;
+            min-height: 800px;
+            position: sticky;
+            top: 122px;
+            border: 1px solid #001f54;
+            border-radius: 20px;
+            padding: 20px;
+            transition: border-color 1s;
+        }
+
+        /* For the data science logo inside */
+        /* Whenever it was hovered over a pop-up button appear to render it fullscreen.
+        However that created problem when it was needed to exit the fullscreen mode.
+        It is better let it be the size it is and not display it fullscreen. */
+        div[data-testid="column"]:first-child
+        button[data-testid="StyledFullScreenButton"] {
+            visibility: hidden;
+        }
+
+        /* Theme toggle */
+            /* Main theme toggle container */
+            div[data-testid="stAppViewBlockContainer"] >
+            div[data-testid="stVerticalBlockBorderWrapper"] >
+            div > div[data-testid="stVerticalBlock"] > 
+            div[data-testid="stHorizontalBlock"] > 
+            div[data-testid="column"]:first-child
+            div[data-testid="stCheckbox"] {
+                justify-content: center;
+            }
+
+            div[data-testid="stAppViewBlockContainer"] >
+            div[data-testid="stVerticalBlockBorderWrapper"] >
+            div > div[data-testid="stVerticalBlock"] > 
+            div[data-testid="stHorizontalBlock"] > 
+            div[data-testid="column"]:first-child
+            div[data-testid="stCheckbox"] > * {
+                height: inherit;
+            }
+
+            div[data-testid="stAppViewBlockContainer"] >
+            div[data-testid="stVerticalBlockBorderWrapper"] >
+            div > div[data-testid="stVerticalBlock"] > 
+            div[data-testid="stHorizontalBlock"] > 
+            div[data-testid="column"]:first-child
+            div[data-testid="stCheckbox"] label[data-baseweb="checkbox"] {
+                justify-content: center;
+                padding: 0px;
+                transform: scale(2) rotate(180deg);
+            }
+            
+            /* Toggle interactive element */
+            div[data-testid="stCheckbox"] label[data-baseweb="checkbox"] > div:first-of-type {
+                background-color: #001f5450;
+                transition: background-color 1s;
+            }
+
+        /* All the text (especially cross-references) inside the side column */
+        div[data-testid="column"]:first-child * {
+            color: #001f54;
+            text-decoration: none;
+        }
+    
+    /* Main column */
+        /* Plots */
+        div[data-testid="column"]:nth-child(2) img {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+            border-radius: 10px;
+        }
+
+        /* Plotly charts */
+            /* Plot main container */
+            div.stPlotlyChart {
+                border-radius: 10px !important;
+                clip-path: border-box !important;
+            }
+
+            /* Plot main background element */
+            div.stPlotlyChart div div > * {
+                background-color: transparent !important;
+            }
+
+            /* Legend */    
+            /* Lehgend Title text element */
+            g.infolayer > g.legend > g.scrollbox > text.legendtitletext {
+                color: #001f54 !important;
+            }
+
+        /* Full Screen Buttons */
+        button[data-testid="StyledFullScreenButton"] {
+            background-color: #03407850;
+        }
