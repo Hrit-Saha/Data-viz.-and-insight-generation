@@ -5,6 +5,8 @@ This project includes data wrangling using numpy and pandas, data visualization 
 # Intructions on running the Streamlit app
 Download / Import / Fork this repository to your personal system and open the main folder in the terminal and execute the command `Streamlit run app.py`.
 ![image](https://github.com/user-attachments/assets/8c8df221-7d35-431a-b005-2d2acf5b1b4c)
+You will find your Streamlit app running in the default browser.
+If not then simply click on the given `Local URL`, in this case `http://localhost:8501`.
 
 
 # The files content of this repository
