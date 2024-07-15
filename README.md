@@ -2,6 +2,13 @@
 
 This project includes data wrangling using numpy and pandas, data visualization using seaborn and plotly, ML model and ANN model implementation for identification of patterns and for predictions. All of this has been manifested into a Streamlit app.
 
+# Intructions on running the Streamlit app
+Download / Import / Fork this repository to your personal system and open the main folder in the terminal and execute the command `Streamlit run app.py`.
+![image](https://github.com/user-attachments/assets/8c8df221-7d35-431a-b005-2d2acf5b1b4c)
+
+
+# The files content of this repository
+
 ## `app.py`
 
 This is the python script for the main Streamlit app page.
